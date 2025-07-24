@@ -1,0 +1,6 @@
+{
+  "name": "Rutherford Scattering Simulator",
+  "description": "An interactive web application that simulates and visualizes the Rutherford scattering experiment, demonstrating the deflection of alpha particles by an atomic nucleus.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
