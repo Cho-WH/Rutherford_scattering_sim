@@ -26,21 +26,20 @@
   "imports": {
     "react": "https://esm.sh/react@^19.1.0",
     "react/": "https://esm.sh/react@^19.1.0/",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.1.0/client",
     "lucide-react": "https://esm.sh/lucide-react@^0.417.0",
     "chart.js": "https://esm.sh/chart.js@^4.4.3",
-    "react-chartjs-2": "https://esm.sh/react-chartjs-2@^5.2.0"
+    "react-chartjs-2": "https://esm.sh/react-chartjs-2@^5.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
   }
 }
 </script>
-<!-- Add Babel to transpile JSX/TSX in the browser -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
     <div id="root"></div>
-    <!-- Load the main React/TSX entrypoint using Babel -->
+    <!-- Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Main application script -->
     <script type="text/babel" data-type="module" src="./index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
